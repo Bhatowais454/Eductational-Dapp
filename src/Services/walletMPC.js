@@ -1,4 +1,3 @@
-// src/services/walletMPC.js
 import { Magic } from "magic-sdk";
 import { ethers } from "ethers";
 

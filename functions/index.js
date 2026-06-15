@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 
 // --------- Helpers ---------
 async function validateMagic(req) {
-  const magic = new Magic(process.env.MAGIC_SECRET || "sk_live_A7AB847671BAF688");
+  const magic = new Magic(process.env.MAGIC_SECRET);
   const didToken = req.headers.authorization?.split("Bearer ")[1];
   if (!didToken) throw new Error("Missing DID token");
   await magic.token.validate(didToken);
