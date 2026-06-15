@@ -3,12 +3,10 @@ import { ethers } from "ethers";
 
 // ----- Config (safe defaults) -----
 const MAGIC_KEY =
-  import.meta?.env?.VITE_MAGIC_PUBLIC_KEY ||
-  process.env.REACT_APP_MAGIC_PUBLIC_KEY ||
+  import.meta?.env?.VITE_MAGIC_PUBLIC_KEY
   "";
 const NETWORK =
   (import.meta?.env?.VITE_CHAIN ||
-    process.env.REACT_APP_CHAIN ||
     "sepolia").toLowerCase();
 
 // Initialize Magic

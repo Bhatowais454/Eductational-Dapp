@@ -4,7 +4,7 @@ import { ensureProvider, ensureSigner } from "./walletMPC";
 import StudentNFTJson from "../abi/StudentNFT.json"; // keep your ABI where it already is
 
 const CONTRACT_ADDRESS =
-  import.meta?.env?.VITE_STUDENT_NFT_ADDRESS || process.env.REACT_APP_CONTRACT_ADDRESS || "";
+  import.meta?.env?.VITE_STUDENT_NFT_ADDRESS ||"";
 
 /**
  * Returns a read-only contract if signer not available, write-capable if signer available.
