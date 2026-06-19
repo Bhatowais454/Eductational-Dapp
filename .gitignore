@@ -23,3 +23,7 @@
 .env
 
 firestore.rules
+
+# Storage rules
+
+storage.rules
